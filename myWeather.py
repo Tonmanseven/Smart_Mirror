@@ -50,8 +50,6 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
     # Запрос текущей погоды
     def request_current_weather(self,lat, lon):
         try:
-            # res = requests.get("http://api.openweathermap.org/data/2.5/weather",
-            #              params={'id': city_id, 'units': 'metric', 'lang': 'ru', 'APPID': appid})
             res = requests.get("http://api.openweathermap.org/data/2.5/weather",
                           params={'lat': lat, 'lon': lon , 'units': 'metric', 'lang': 'ru', 'APPID': appid})
             data = res.json()                        #получаем данные с json
@@ -109,36 +107,6 @@ if __name__=="__main__":
     myapp.show()
     sys.exit(app.exec_())
    
-
-# Проверка наличия в базе информации о нужном населенном пункте
-# def get_city_id(s_city_name):
-#     try:
-#         res = requests.get("http://api.openweathermap.org/data/2.5/find",
-#                      params={'q': s_city_name, 'type': 'like', 'units': 'metric', 'lang': 'ru', 'APPID': appid})
-#         data = res.json()
-#         cities = ["{} ({})".format(d['name'], d['sys']['country'])
-#                   for d in data['list']]
-#         print("city:", cities)
-#         city_id = data['list'][0]['id']
-#         print('city_id=', city_id)
-#     except Exception as e:
-#         print("Exception (find):", e)
-#         pass
-#     assert isinstance(city_id, int)
-#     return city_id
-
-# #Проверка в случае если назавние городов совпадают, но они с разных стран
-# if len(sys.argv) == 2:
-#     s_city_name = sys.argv[1]
-#     print("city:", s_city_name)
-#     city_id = get_city_id(s_city_name)
-# elif len(sys.argv) > 2:
-#     print('Enter name of city as one argument. For example: Petersburg,RU')
-#     sys.exit()    
-
-
-
-
 # Прогноз на 5 дней
 # def request_forecast(city_id):
 #     try:
@@ -154,6 +122,3 @@ if __name__=="__main__":
 #     except Exception as e:
 #         print("Exception (forecast):", e)
 #         pass
-
-#request_forecast(city_id)
-#request_current_weather(city_id)
