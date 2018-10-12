@@ -1,4 +1,5 @@
 import json
+import pyowm
 import sys
 import requests
 import os
@@ -26,33 +27,45 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
         QtWidgets.QWidget.__init__(self, parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-
+        
         #self.DomainCheck()
         
         # Здесь прописываем событие нажатия на кнопку                     
         self.ui.pushButton_2.clicked.connect(self.DomainCheck)
 
-    # Определение текущего местоположения
-    def request_location(self,url):
+    # Запрос текущей погоды
+    def request_current_weather(self,url):
         try:
-            lc = requests.get(url, params={'lang': 'ru'})
+            lc = requests.get(url) #  params={'lang': 'ru'}
             data_lc = lc.json()                        #получаем данные с json
-            cityIs =  data_lc["city"]
+            cityIs =  data_lc["city"]            
+            cuntrCode = data_lc["countryCode"]
             lat = data_lc["lat"] # Ширина 
             lon = data_lc["lon"] # Долгота
 
         except Exception as e:
             print("Exception (location):", e)
             pass
-        
-        return lat, lon
 
-    # Запрос текущей погоды
-    def request_current_weather(self,lat, lon):
+        #служба не работает, если есть ` на конце слова (Example: Kazan`). Поэтому проверяем название города
+        l_str = len(cityIs)
+        i = l_str - 1
+        step = 1
+        # print(cityIs[i])
+        # print(cityIs[0:i:step])
+        if cityIs[i] == "’":
+            cityNow = cityIs[0:i:step]
+        else:
+            print("(((0(")    
+
+        c_city = "{},{}".format(cityNow,cuntrCode)
+        
         try:
             res = requests.get("http://api.openweathermap.org/data/2.5/weather",
-                          params={'lat': lat, 'lon': lon , 'units': 'metric', 'lang': 'ru', 'APPID': appid})
+                           params={'q':c_city, 'units': 'metric', 'lang': 'ru', 'APPID': appid})
             data = res.json()                        #получаем данные с json
+            coord = data["name"]
+            print(coord)
             cond = data['weather'][0]['description'] #ясно, пасмурно, дождь ...
             tempr =  data['main']['temp']            #значение темп
             hum =  data['main']['humidity']          #влажность
@@ -99,7 +112,7 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
     # при нажатии на кнопку                  
     def DomainCheck(self):
         #self.request_location(url)
-        self.request_current_weather(self.request_location(url), self.request_location(url))  
+        self.request_current_weather(url)  
 
 if __name__=="__main__":
     app = QtWidgets.QApplication(sys.argv)
