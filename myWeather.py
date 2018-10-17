@@ -1,5 +1,4 @@
 import json
-import pyowm
 import sys
 import requests
 import os
@@ -14,7 +13,7 @@ from desWeather import *
 from PyQt5.QtWidgets import (QWidget, QHBoxLayout,
     QLabel, QApplication)
 from PyQt5.QtGui import QPixmap
-
+from PyQt5.QtCore import QTimer, QTime 
 #api key Open Weather Mapx
 appid = "982f4d4efd2cef497588658a85c4d309"
 
@@ -27,11 +26,21 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
         QtWidgets.QWidget.__init__(self, parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        
-        #self.DomainCheck()
-        
+        #Функция отображения времени
+        #Timer 
+        self.timer = QTimer()
+        #Connect timer 
+        self.timer.timeout.connect(self._update)
+        #Start
+        self.timer.start(1000)
         # Здесь прописываем событие нажатия на кнопку                     
         self.ui.pushButton_2.clicked.connect(self.DomainCheck)
+
+
+    def _update(self):
+        # Обновление каждую сек
+        time = QTime.currentTime().toString()
+        self.ui.label.setText(time)
 
     # Запрос текущей погоды
     def request_current_weather(self,url):
@@ -51,10 +60,8 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
         l_str = len(cityIs)
         i = l_str - 1
         step = 1
-        # print(cityIs[i])
-        # print(cityIs[0:i:step])
         if cityIs[i] == "’":
-            cityNow = cityIs[0:i:step]
+            cityNow = cityIs[0:i:step] # Срезаем ` если таковой имеется
         else:
             print("(((0(")    
 
@@ -65,7 +72,6 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
                            params={'q':c_city, 'units': 'metric', 'lang': 'ru', 'APPID': appid})
             data = res.json()                        #получаем данные с json
             coord = data["name"]
-            print(coord)
             cond = data['weather'][0]['description'] #ясно, пасмурно, дождь ...
             tempr =  data['main']['temp']            #значение темп
             hum =  data['main']['humidity']          #влажность
@@ -74,15 +80,15 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
             iCon = data['weather'][0]['icon']        #номер иконки 
             Deg2South = self.get_wind_direction(windDeg) #преобразуем углы в направления 
 
-            #time 
+            #today is: 
             a = datetime.today()
-            self.ui.label.setText(a.strftime("%H:%M:%S"))
-
+            
+            self.ui.inCountry.setText(coord)
             self.ui.todayIs.setText(a.strftime("%A %d %B"))
             self.ui.humidityLabel.setText("%d %%" % hum)
-            self.ui.windLabel.setText("%d м/c" % windSpeed)
+            self.ui.windLabel.setText("{} м/c {} ".format(windSpeed, Deg2South))
             self.ui.Temp.setText("%d °C" % tempr)
-            self.ui.weathIs.setText("Сейчас {} °C, {}, ветер:{} м/с {}".format(tempr, cond, windSpeed, Deg2South))
+            self.ui.weathIs.setText("Сейчас {} °C, {}".format(tempr, cond))
             self.set_weather_icon(self.ui.TempIc, data['weather'][0]['icon'])
         except Exception as e:
             print("Exception (weather):", e)
@@ -96,7 +102,7 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
     
     #Функция перевода с градуса напр ветра в напр
     def get_wind_direction(self, deg):
-        l = ['С ','СВ',' В','ЮВ','Ю ','ЮЗ',' З','СЗ']
+        l = ['Северный','Северо-Восточный',' Восточный','Юго-Восточный','Южный ','Юго-Западный',' Западный','Северо-Западный']
         for i in range(0,8):
             step = 45.
             min = i*step - 45/2.
@@ -107,6 +113,7 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
                 result = l[i]
                 break
         return result
+
 
     # Пока пустая функция которая выполняется
     # при нажатии на кнопку                  
