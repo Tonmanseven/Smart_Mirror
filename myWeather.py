@@ -35,8 +35,7 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
         self.timer.start(1000)
         # Здесь прописываем событие нажатия на кнопку                     
         self.ui.pushButton_2.clicked.connect(self.DomainCheck)
-
-
+        
     def _update(self):
         # Обновление каждую сек
         time = QTime.currentTime().toString()
@@ -51,6 +50,9 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
             cuntrCode = data_lc["countryCode"]
             lat = data_lc["lat"] # Ширина 
             lon = data_lc["lon"] # Долгота
+            lc_ru = requests.get(url, params={'lang': 'ru'})
+            data_lc_ru = lc_ru.json() # Для русскоязчн. раскл
+            cityRu = data_lc_ru["city"]
 
         except Exception as e:
             print("Exception (location):", e)
@@ -71,7 +73,7 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
             res = requests.get("http://api.openweathermap.org/data/2.5/weather",
                            params={'q':c_city, 'units': 'metric', 'lang': 'ru', 'APPID': appid})
             data = res.json()                        #получаем данные с json
-            coord = data["name"]
+            cityID = data["id"]
             cond = data['weather'][0]['description'] #ясно, пасмурно, дождь ...
             tempr =  data['main']['temp']            #значение темп
             hum =  data['main']['humidity']          #влажность
@@ -83,7 +85,7 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
             #today is: 
             a = datetime.today()
             
-            self.ui.inCountry.setText(coord)
+            self.ui.inCountry.setText(cityRu)
             self.ui.todayIs.setText(a.strftime("%A %d %B"))
             self.ui.humidityLabel.setText("%d %%" % hum)
             self.ui.windLabel.setText("{} м/c {} ".format(windSpeed, Deg2South))
@@ -93,13 +95,31 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
         except Exception as e:
             print("Exception (weather):", e)
             pass
-
+  
+        return cityID    
 
     #Зашрузим нужную иконку
     def set_weather_icon(self, label, weather):    
         pixmap = QPixmap(os.path.join('images', "%s.png" % weather))
         label.setPixmap(pixmap)
-    
+ 
+    def request_forecast(self, idCity):
+        try:
+            resuLT = requests.get("http://api.openweathermap.org/data/2.5/forecast",
+                            params={'id': idCity, 'units': 'metric', 'APPID': appid})
+            dataIS = resuLT.json()
+            print('city:', dataIS['city']['name'], dataIS['city']['country'])
+            for i in dataIS['list']:
+                print( (i['dt_txt'])[:16], '{0:+3.0f}'.format(i['main']['temp']),
+                    '{0:2.0f}'.format(i['wind']['speed']) + " м/с", 
+                    i['weather'][0]['description'], i['weather'][0]['icon'] )
+            
+
+        except Exception as e:
+            print("Exception (forecast):", e)
+            pass
+
+
     #Функция перевода с градуса напр ветра в напр
     def get_wind_direction(self, deg):
         l = ['Северный','Северо-Восточный',' Восточный','Юго-Восточный','Южный ','Юго-Западный',' Западный','Северо-Западный']
@@ -114,12 +134,12 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
                 break
         return result
 
-
     # Пока пустая функция которая выполняется
     # при нажатии на кнопку                  
     def DomainCheck(self):
-        #self.request_location(url)
-        self.request_current_weather(url)  
+        IDc = self.request_current_weather(url)
+        self.request_forecast(IDc)
+        #self.request_current_weather(url)  
 
 if __name__=="__main__":
     app = QtWidgets.QApplication(sys.argv)
