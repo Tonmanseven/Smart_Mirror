@@ -13,7 +13,7 @@ from desWeather import *
 from PyQt5.QtWidgets import (QWidget, QHBoxLayout,
     QLabel, QApplication)
 from PyQt5.QtGui import QPixmap
-
+from PyQt5.QtCore import QTimer, QTime 
 #api key Open Weather Mapx
 appid = "982f4d4efd2cef497588658a85c4d309"
 
@@ -26,35 +26,52 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
         QtWidgets.QWidget.__init__(self, parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-
-        #self.DomainCheck()
-        
+        #Функция отображения времени
+        #Timer 
+        self.timer = QTimer()
+        #Connect timer 
+        self.timer.timeout.connect(self._update)
+        #Start
+        self.timer.start(1000)
         # Здесь прописываем событие нажатия на кнопку                     
         self.ui.pushButton_2.clicked.connect(self.DomainCheck)
 
-    # Определение текущего местоположения
-    def request_location(self,url):
+
+    def _update(self):
+        # Обновление каждую сек
+        time = QTime.currentTime().toString()
+        self.ui.label.setText(time)
+
+    # Запрос текущей погоды
+    def request_current_weather(self,url):
         try:
-            lc = requests.get(url, params={'lang': 'ru'})
+            lc = requests.get(url) #  params={'lang': 'ru'}
             data_lc = lc.json()                        #получаем данные с json
-            cityIs =  data_lc["city"]
+            cityIs =  data_lc["city"]            
+            cuntrCode = data_lc["countryCode"]
             lat = data_lc["lat"] # Ширина 
             lon = data_lc["lon"] # Долгота
 
         except Exception as e:
             print("Exception (location):", e)
             pass
-        
-        return lat, lon
 
-    # Запрос текущей погоды
-    def request_current_weather(self,lat, lon):
+        #служба не работает, если есть ` на конце слова (Example: Kazan`). Поэтому проверяем название города
+        l_str = len(cityIs)
+        i = l_str - 1
+        step = 1
+        if cityIs[i] == "’":
+            cityNow = cityIs[0:i:step] # Срезаем ` если таковой имеется
+        else:
+            print("(((0(")    
+
+        c_city = "{},{}".format(cityNow,cuntrCode)
+        
         try:
-            # res = requests.get("http://api.openweathermap.org/data/2.5/weather",
-            #              params={'id': city_id, 'units': 'metric', 'lang': 'ru', 'APPID': appid})
             res = requests.get("http://api.openweathermap.org/data/2.5/weather",
-                          params={'lat': lat, 'lon': lon , 'units': 'metric', 'lang': 'ru', 'APPID': appid})
+                           params={'q':c_city, 'units': 'metric', 'lang': 'ru', 'APPID': appid})
             data = res.json()                        #получаем данные с json
+            coord = data["name"]
             cond = data['weather'][0]['description'] #ясно, пасмурно, дождь ...
             tempr =  data['main']['temp']            #значение темп
             hum =  data['main']['humidity']          #влажность
@@ -63,15 +80,15 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
             iCon = data['weather'][0]['icon']        #номер иконки 
             Deg2South = self.get_wind_direction(windDeg) #преобразуем углы в направления 
 
-            #time 
+            #today is: 
             a = datetime.today()
-            self.ui.label.setText(a.strftime("%H:%M:%S"))
-
+            
+            self.ui.inCountry.setText(coord)
             self.ui.todayIs.setText(a.strftime("%A %d %B"))
             self.ui.humidityLabel.setText("%d %%" % hum)
-            self.ui.windLabel.setText("%d м/c" % windSpeed)
+            self.ui.windLabel.setText("{} м/c {} ".format(windSpeed, Deg2South))
             self.ui.Temp.setText("%d °C" % tempr)
-            self.ui.weathIs.setText("Сейчас {} °C, {}, ветер:{} м/с {}".format(tempr, cond, windSpeed, Deg2South))
+            self.ui.weathIs.setText("Сейчас {} °C, {}".format(tempr, cond))
             self.set_weather_icon(self.ui.TempIc, data['weather'][0]['icon'])
         except Exception as e:
             print("Exception (weather):", e)
@@ -85,7 +102,7 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
     
     #Функция перевода с градуса напр ветра в напр
     def get_wind_direction(self, deg):
-        l = ['С ','СВ',' В','ЮВ','Ю ','ЮЗ',' З','СЗ']
+        l = ['Северный','Северо-Восточный',' Восточный','Юго-Восточный','Южный ','Юго-Западный',' Западный','Северо-Западный']
         for i in range(0,8):
             step = 45.
             min = i*step - 45/2.
@@ -97,11 +114,12 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
                 break
         return result
 
+
     # Пока пустая функция которая выполняется
     # при нажатии на кнопку                  
     def DomainCheck(self):
         #self.request_location(url)
-        self.request_current_weather(self.request_location(url), self.request_location(url))  
+        self.request_current_weather(url)  
 
 if __name__=="__main__":
     app = QtWidgets.QApplication(sys.argv)
@@ -109,36 +127,6 @@ if __name__=="__main__":
     myapp.show()
     sys.exit(app.exec_())
    
-
-# Проверка наличия в базе информации о нужном населенном пункте
-# def get_city_id(s_city_name):
-#     try:
-#         res = requests.get("http://api.openweathermap.org/data/2.5/find",
-#                      params={'q': s_city_name, 'type': 'like', 'units': 'metric', 'lang': 'ru', 'APPID': appid})
-#         data = res.json()
-#         cities = ["{} ({})".format(d['name'], d['sys']['country'])
-#                   for d in data['list']]
-#         print("city:", cities)
-#         city_id = data['list'][0]['id']
-#         print('city_id=', city_id)
-#     except Exception as e:
-#         print("Exception (find):", e)
-#         pass
-#     assert isinstance(city_id, int)
-#     return city_id
-
-# #Проверка в случае если назавние городов совпадают, но они с разных стран
-# if len(sys.argv) == 2:
-#     s_city_name = sys.argv[1]
-#     print("city:", s_city_name)
-#     city_id = get_city_id(s_city_name)
-# elif len(sys.argv) > 2:
-#     print('Enter name of city as one argument. For example: Petersburg,RU')
-#     sys.exit()    
-
-
-
-
 # Прогноз на 5 дней
 # def request_forecast(city_id):
 #     try:
@@ -154,6 +142,3 @@ if __name__=="__main__":
 #     except Exception as e:
 #         print("Exception (forecast):", e)
 #         pass
-
-#request_forecast(city_id)
-#request_current_weather(city_id)
