@@ -1,0 +1,42 @@
+<application>
+  <component name="VimSettings">
+    <state version="4" enabled="true" />
+    <globalmarks />
+    <filemarks>
+      <file name="/Dummy.txt" timestamp="1540369365902">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Рабочий стол/mirror/myWeather.py" timestamp="1540375424390">
+        <mark key="[" line="108" column="0" />
+        <mark key="]" line="108" column="31" />
+      </file>
+    </filemarks>
+    <jumps />
+    <registers>
+      <register name="0" type="2">
+        <text encoding="base64">ICAgICAgICBsYWJlbC5zZXRQaXhtYXAocGl4bWFwKQo=</text>
+      </register>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICBsYWJlbC5zZXRQaXhtYXAocGl4bWFwKQo=</text>
+      </register>
+    </registers>
+    <search>
+      <last-dir>0</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history>
+      <history-search />
+      <history-cmd />
+      <history-expr />
+      <history-input />
+    </history>
+    <shortcut-conflicts>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed C</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed V</text>
+      </shortcut-conflict>
+    </shortcut-conflicts>
+  </component>
+</application>
