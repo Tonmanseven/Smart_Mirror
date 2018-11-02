@@ -1,4 +1,5 @@
 import json
+import pandas as pd
 import sys
 import requests
 import os
@@ -92,7 +93,9 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
             self.ui.Temp.setText("%d °C" % tempr)
             self.ui.weathIs.setText("Сейчас {} °C, {}".format(tempr, cond))
             self.set_weather_icon(self.ui.TempIc, iCon)
-            self.set_new_icon(self.ui.label_2)
+
+
+
         except Exception as e:
             print("Exception (weather):", e)
             pass
@@ -104,26 +107,50 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
         pixmap = QPixmap(os.path.join('images', "%s.png" % weather))
         label.setPixmap(pixmap)
 
-    def set_new_icon(self, label):
-        pixmapy = QPixmap(os.path.join('ic', "01.svg"))
-        label.setPixmap(pixmapy)
-
     def request_forecast(self, idCity):
         try:
             resuLT = requests.get("http://api.openweathermap.org/data/2.5/forecast",
                             params={'id': idCity, 'units': 'metric', 'APPID': appid})
             dataIS = resuLT.json()
-            print('city:', dataIS['city']['name'], dataIS['city']['country'])
-            for i in dataIS['list']:
-                print( (i['dt_txt'])[:16], '{0:+3.0f}'.format(i['main']['temp']),
-                    '{0:2.0f}'.format(i['wind']['speed']) + " м/с", 
-                    i['weather'][0]['description'], i['weather'][0]['icon'] )
-            
+            # for i in dataIS['list']:
+            #     dan = (i['dt_txt'])[:16]
+            #     print(dan)
+            dan = dataIS['list']
+
+            dataTime = pd.DataFrame(dan)
+            myDataTime = dataTime['dt_txt'][:10]
+            print(myDataTime.loc[0:8])
+            self.ui.label_2.setText(myDataTime.loc[0])
+            self.ui.label_3.setText(myDataTime.loc[1])
+            self.ui.label_5.setText(myDataTime.loc[2])
+            self.ui.label_4.setText(myDataTime.loc[3])
+            self.ui.label_8.setText(myDataTime.loc[4])
+            self.ui.label_7.setText(myDataTime.loc[5])
+            self.ui.label_6.setText(myDataTime.loc[6])
+            self.ui.label_9.setText(myDataTime.loc[7])
+
+            #self.set_new_icon(self.ui.label_2)
+
+            # for i in dan:
+            #     new = i['dt_txt']
+            #     labelData = str(new).split("/n")
+            #     df = pd.DataFrame(labelData)
+            #     print(df)
+
+            #print('city:', dataIS['city']['name'], dataIS['city']['country'])
+            # for i in dataIS['list']:
+            #     print( (i['dt_txt'])[:16], '{0:+3.0f}'.format(i['main']['temp']),
+            #         '{0:2.0f}'.format(i['wind']['speed']) + " м/с",
+            #         i['weather'][0]['description'], i['weather'][0]['icon'] )
+
 
         except Exception as e:
             print("Exception (forecast):", e)
             pass
 
+    def set_new_icon(self, label):
+        pixmapy = QPixmap(os.path.join('ic', "01.svg"))
+        label.setPixmap(pixmapy)
 
     #Функция перевода с градуса напр ветра в напр
     def get_wind_direction(self, deg):
