@@ -16,8 +16,8 @@
         <mark key="[" line="108" column="0" />
         <mark key="]" line="108" column="31" />
       </file>
-      <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1541165811022">
-        <mark key="'" line="116" column="40" />
+      <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1541166940733">
+        <mark key="'" line="121" column="33" />
         <mark key="[" line="116" column="7" />
         <mark key="]" line="116" column="7" />
         <mark key="." line="116" column="7" />
@@ -25,6 +25,7 @@
     </filemarks>
     <jumps>
       <jump line="116" column="40" filename="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" />
+      <jump line="122" column="33" filename="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" />
     </jumps>
     <registers>
       <register name="0" type="2">
