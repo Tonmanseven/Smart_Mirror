@@ -6,18 +6,35 @@
       <file name="/Dummy.txt" timestamp="1540369365902">
         <mark key="[" line="0" column="0" />
       </file>
+      <file name="/Python Console" timestamp="1541164035827">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py" timestamp="1541164046567">
+        <mark key="[" line="17" column="0" />
+      </file>
       <file name="$USER_HOME$/Рабочий стол/mirror/myWeather.py" timestamp="1540375424390">
         <mark key="[" line="108" column="0" />
         <mark key="]" line="108" column="31" />
       </file>
+      <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1541164430637">
+        <mark key="'" line="116" column="40" />
+        <mark key="[" line="116" column="7" />
+        <mark key="]" line="116" column="7" />
+        <mark key="." line="116" column="7" />
+      </file>
     </filemarks>
-    <jumps />
+    <jumps>
+      <jump line="116" column="40" filename="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" />
+    </jumps>
     <registers>
       <register name="0" type="2">
         <text encoding="base64">ICAgICAgICBsYWJlbC5zZXRQaXhtYXAocGl4bWFwKQo=</text>
       </register>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICBsYWJlbC5zZXRQaXhtYXAocGl4bWFwKQo=</text>
+      <register name="&quot;" type="4">
+        <text encoding="base64">ICA=</text>
+      </register>
+      <register name="-" type="4">
+        <text encoding="base64">ICA=</text>
       </register>
     </registers>
     <search>
@@ -36,6 +53,9 @@
       </shortcut-conflict>
       <shortcut-conflict owner="ide">
         <text>ctrl pressed V</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed X</text>
       </shortcut-conflict>
     </shortcut-conflicts>
   </component>
