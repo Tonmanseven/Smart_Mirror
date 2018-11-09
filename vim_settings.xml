@@ -16,10 +16,10 @@
         <mark key="[" line="108" column="0" />
         <mark key="]" line="108" column="31" />
       </file>
-      <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1541687878050">
-        <mark key="[" line="124" column="26" />
-        <mark key="]" line="124" column="26" />
-        <mark key="." line="124" column="26" />
+      <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1541751804496">
+        <mark key="[" line="122" column="16" />
+        <mark key="]" line="122" column="16" />
+        <mark key="." line="122" column="16" />
       </file>
     </filemarks>
     <jumps>
@@ -30,11 +30,26 @@
       <register name="0" type="2">
         <text encoding="base64">ICAgICAgICBsYWJlbC5zZXRQaXhtYXAocGl4bWFwKQo=</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgI3ByaW50KG15RGF0YVRpbWVbNDpdKQo=</text>
+      <register name="1" type="4">
+        <text>meme = pd.Series(listTime)
+                print(meme)</text>
       </register>
       <register name="&quot;" type="4">
-        <text>)</text>
+        <text>meme = pd.Series(listTime)
+                print(meme)</text>
+      </register>
+      <register name="2" type="4">
+        <text encoding="base64">CmZyb20gZGF0ZXRpbWUgaW1wb3J0IGRhdGV0aW1l</text>
+      </register>
+      <register name="3" type="4">
+        <text encoding="base64">IGZvciBpIGluIGRhbjoKICAgICAgICAgICAgICAgIHNhaWYgPSAoaVsnZHRfdHh0J10pWzExOl0KICAgICAgICAgICAgICAgIG1lbWUgPSBzYWlmLnNwbGl0KCdcbicpCiAgICAgICAgICAgICAgICBwZiA9IHBkLkRhdGFGcmFtZShtZW1lKQogICAgICAgICAgICAgICAgcHJpbnQocGYp</text>
+      </register>
+      <register name="4" type="4">
+        <text>for i, line in enumerate(pf):
+                    print(i, line)</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgI3ByaW50KG15RGF0YVRpbWVbNDpdKQo=</text>
       </register>
       <register name="-" type="4">
         <text>)</text>
@@ -59,6 +74,9 @@
       </shortcut-conflict>
       <shortcut-conflict owner="ide">
         <text>ctrl pressed X</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed B</text>
       </shortcut-conflict>
     </shortcut-conflicts>
   </component>
