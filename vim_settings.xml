@@ -16,10 +16,10 @@
         <mark key="[" line="108" column="0" />
         <mark key="]" line="108" column="31" />
       </file>
-      <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1541751804496">
-        <mark key="[" line="122" column="16" />
-        <mark key="]" line="122" column="16" />
-        <mark key="." line="122" column="16" />
+      <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1541752700310">
+        <mark key="[" line="126" column="73" />
+        <mark key="]" line="126" column="73" />
+        <mark key="." line="126" column="73" />
       </file>
     </filemarks>
     <jumps>
@@ -35,8 +35,7 @@
                 print(meme)</text>
       </register>
       <register name="&quot;" type="4">
-        <text>meme = pd.Series(listTime)
-                print(meme)</text>
+        <text>)</text>
       </register>
       <register name="2" type="4">
         <text encoding="base64">CmZyb20gZGF0ZXRpbWUgaW1wb3J0IGRhdGV0aW1l</text>
