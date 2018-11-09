@@ -16,10 +16,10 @@
         <mark key="[" line="108" column="0" />
         <mark key="]" line="108" column="31" />
       </file>
-      <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1541756369355">
-        <mark key="[" line="115" column="12" />
-        <mark key="]" line="115" column="12" />
-        <mark key="." line="115" column="12" />
+      <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1541758629063">
+        <mark key="[" line="128" column="18" />
+        <mark key="]" line="128" column="18" />
+        <mark key="." line="128" column="18" />
       </file>
     </filemarks>
     <jumps>
@@ -34,7 +34,7 @@
         <text encoding="base64">ICMgcHJpbnQoZGF0ZXRpbWUuZnJvbXRpbWVzdGFtcChteURhdGFUaW1lKS5zdHJmdGltZSgnJUk6JU0gJXAnKSkKCgo=</text>
       </register>
       <register name="&quot;" type="4">
-        <text>#print(dataTime.fromtimestamp(dan).strftime('%Y-%m-%d %I:%M:%S %p'))</text>
+        <text encoding="base64">ICAnJUk6JU0gJXAgJWIuICVkLCAleScpLnJlcGxhY2UoIlBNIiwicC5tLiIpLnJlcGxhY2UoIkFNIiwiYS5tLiIp</text>
       </register>
       <register name="2" type="4">
         <text>for i in myDataTime:
@@ -58,7 +58,7 @@
         <text encoding="base64">ICAgICAgICAgICAgI3ByaW50KG15RGF0YVRpbWVbNDpdKQo=</text>
       </register>
       <register name="-" type="4">
-        <text>#print(dataTime.fromtimestamp(dan).strftime('%Y-%m-%d %I:%M:%S %p'))</text>
+        <text encoding="base64">ICAnJUk6JU0gJXAgJWIuICVkLCAleScpLnJlcGxhY2UoIlBNIiwicC5tLiIpLnJlcGxhY2UoIkFNIiwiYS5tLiIp</text>
       </register>
     </registers>
     <search>
