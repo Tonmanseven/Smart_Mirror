@@ -16,10 +16,10 @@
         <mark key="[" line="108" column="0" />
         <mark key="]" line="108" column="31" />
       </file>
-      <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1541759903057">
-        <mark key="[" line="114" column="14" />
-        <mark key="]" line="114" column="14" />
-        <mark key="." line="114" column="14" />
+      <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1541770405530">
+        <mark key="[" line="119" column="15" />
+        <mark key="]" line="119" column="16" />
+        <mark key="." line="119" column="16" />
       </file>
     </filemarks>
     <jumps>
@@ -31,17 +31,22 @@
         <text encoding="base64">ICAgICAgICBsYWJlbC5zZXRQaXhtYXAocGl4bWFwKQo=</text>
       </register>
       <register name="1" type="4">
-        <text encoding="base64">ICAgIG15RGF0YVRpbWUgPSBpWydkdCddCiAgICAgICAgICAgICMgICAgIGxpc3RUaW1lID0gZGF0ZXRpbWUuZnJvbXRpbWVzdGFtcChteURhdGFUaW1lKS5zdHJmdGltZQ==</text>
+        <text>listTime = datetime.fromtimestamp(myDataTime.loc[i]).strftime(
+                    '%I:%M %p %b. %d.%y')</text>
       </register>
       <register name="&quot;" type="4">
-        <text encoding="base64">ICAgIG15RGF0YVRpbWUgPSBpWydkdCddCiAgICAgICAgICAgICMgICAgIGxpc3RUaW1lID0gZGF0ZXRpbWUuZnJvbXRpbWVzdGFtcChteURhdGFUaW1lKS5zdHJmdGltZQ==</text>
+        <text>listTime = datetime.fromtimestamp(myDataTime.loc[i]).strftime(
+                    '%I:%M %p %b. %d.%y')</text>
       </register>
       <register name="2" type="4">
+        <text encoding="base64">ICAgIG15RGF0YVRpbWUgPSBpWydkdCddCiAgICAgICAgICAgICMgICAgIGxpc3RUaW1lID0gZGF0ZXRpbWUuZnJvbXRpbWVzdGFtcChteURhdGFUaW1lKS5zdHJmdGltZQ==</text>
+      </register>
+      <register name="3" type="4">
         <text># for i in dataIS['list']:
             #     dan = (i['dt_txt'])[:16]
             #     print(dan)</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text>#self.set_new_icon(self.ui.label_2)
 
             # for i in dan:
@@ -56,7 +61,7 @@
             #         '{0:2.0f}'.format(i['wind']['speed']) + &quot; м/с&quot;,
             #         i['weather'][0]['description'], i['weather'][0]['icon'] )</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text>self.ui.label_3.setText(myDataTime.loc[1])
                 self.ui.label_4.setText(myDataTime.loc[2])
                 self.ui.label_5.setText(myDataTime.loc[3])
@@ -65,22 +70,19 @@
                 self.ui.label_8.setText(myDataTime.loc[6])
                 self.ui.label_9.setText(myDataTime.loc[7])</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text encoding="base64">ICMgcHJpbnQoZGF0ZXRpbWUuZnJvbXRpbWVzdGFtcChteURhdGFUaW1lKS5zdHJmdGltZSgnJUk6JU0gJXAnKSkKCgo=</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text>for i in myDataTime:
                 i = i + 1</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text>meme = pd.Series(listTime)
                 print(meme)</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">CmZyb20gZGF0ZXRpbWUgaW1wb3J0IGRhdGV0aW1l</text>
-      </register>
       <register name="9" type="4">
-        <text encoding="base64">IGZvciBpIGluIGRhbjoKICAgICAgICAgICAgICAgIHNhaWYgPSAoaVsnZHRfdHh0J10pWzExOl0KICAgICAgICAgICAgICAgIG1lbWUgPSBzYWlmLnNwbGl0KCdcbicpCiAgICAgICAgICAgICAgICBwZiA9IHBkLkRhdGFGcmFtZShtZW1lKQogICAgICAgICAgICAgICAgcHJpbnQocGYp</text>
+        <text encoding="base64">CmZyb20gZGF0ZXRpbWUgaW1wb3J0IGRhdGV0aW1l</text>
       </register>
       <register name="-" type="4">
         <text />
