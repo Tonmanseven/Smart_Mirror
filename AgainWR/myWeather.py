@@ -3,12 +3,10 @@ import pandas as pd
 import sys
 import requests
 import os
-import time, locale
-from datetime import datetime
+import locale
 locale.setlocale(locale.LC_TIME, 'ru_RU.UTF-8')
 
 from datetime import datetime
-from PyQt5 import QtCore, QtGui, QtWidgets
 from desWeather import *
 
 from PyQt5.QtWidgets import (QWidget, QHBoxLayout,
@@ -117,17 +115,29 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
             #     print(dan)
             dan = dataIS['list']
 
-            dataTime = pd.DataFrame(dan)
-            myDataTime = dataTime['dt_txt'][:10]
-            print(myDataTime.loc[0:8])
-            self.ui.label_2.setText(myDataTime.loc[0])
-            self.ui.label_3.setText(myDataTime.loc[1])
-            self.ui.label_5.setText(myDataTime.loc[2])
-            self.ui.label_4.setText(myDataTime.loc[3])
-            self.ui.label_8.setText(myDataTime.loc[4])
-            self.ui.label_7.setText(myDataTime.loc[5])
-            self.ui.label_6.setText(myDataTime.loc[6])
-            self.ui.label_9.setText(myDataTime.loc[7])
+            # for i in dan:
+            #     myDataTime = i['dt']
+            #     listTime = datetime.fromtimestamp(myDataTime).strftime('%I:%M %p')
+
+
+            dandtime= pd.DataFrame(dan)
+            myDataTime = dandtime['dt']
+
+            #yeex
+            i = 0
+            while i < 8:
+                listTime = datetime.fromtimestamp(myDataTime.loc[i]).strftime('%I:%M %p')
+                print(listTime)
+                i += 1
+
+            # self.ui.label_2.setText(myDataTime.loc[0])
+            # self.ui.label_3.setText(myDataTime.loc[1])
+            # self.ui.label_5.setText(myDataTime.loc[2])
+            # self.ui.label_4.setText(myDataTime.loc[3])
+            # self.ui.label_8.setText(myDataTime.loc[4])
+            # self.ui.label_7.setText(myDataTime.loc[5])
+            # self.ui.label_6.setText(myDataTime.loc[6])
+            # self.ui.label_9.setText(myDataTime.loc[7])
 
             #self.set_new_icon(self.ui.label_2)
 
