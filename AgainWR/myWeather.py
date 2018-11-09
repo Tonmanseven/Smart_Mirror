@@ -110,49 +110,33 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
             resuLT = requests.get("http://api.openweathermap.org/data/2.5/forecast",
                             params={'id': idCity, 'units': 'metric', 'APPID': appid})
             dataIS = resuLT.json()
-            # for i in dataIS['list']:
-            #     dan = (i['dt_txt'])[:16]
-            #     print(dan)
+
             dan = dataIS['list']
-
-            # for i in dan:
-            #     myDataTime = i['dt']
-            #     listTime = datetime.fromtimestamp(myDataTime).strftime('%I:%M %p')
-
 
             dandtime= pd.DataFrame(dan)
             myDataTime = dandtime['dt']
 
-            #yeex
             i = 0
             while i < 8:
-                listTime = datetime.fromtimestamp(myDataTime.loc[i]).strftime('%I:%M %p')
-                print(listTime)
+                listTime = datetime.fromtimestamp(myDataTime.loc[i]).strftime(
+                    '%I:%M %p %b. %d.%y')
+                self.ui.label_2.setText(datetime.fromtimestamp(myDataTime.loc[0]).strftime(
+                    '%I:%M %p %b. %d.%y'))
+                self.ui.label_3.setText(datetime.fromtimestamp(myDataTime.loc[1]).strftime(
+                    '%I:%M %p %b. %d.%y'))
+                self.ui.label_4.setText(datetime.fromtimestamp(myDataTime.loc[2]).strftime(
+                    '%I:%M %p %b. %d.%y'))
+                self.ui.label_5.setText(datetime.fromtimestamp(myDataTime.loc[3]).strftime(
+                    '%I:%M %p %b. %d.%y'))
+                self.ui.label_6.setText(datetime.fromtimestamp(myDataTime.loc[4]).strftime(
+                    '%I:%M %p %b. %d.%y'))
+                self.ui.label_7.setText(datetime.fromtimestamp(myDataTime.loc[5]).strftime(
+                    '%I:%M %p %b. %d.%y'))
+                self.ui.label_8.setText(datetime.fromtimestamp(myDataTime.loc[6]).strftime(
+                    '%I:%M %p %b. %d.%y'))
+                self.ui.label_9.setText(datetime.fromtimestamp(myDataTime.loc[7]).strftime(
+                    '%I:%M %p %b. %d.%y'))
                 i += 1
-
-            # self.ui.label_2.setText(myDataTime.loc[0])
-            # self.ui.label_3.setText(myDataTime.loc[1])
-            # self.ui.label_5.setText(myDataTime.loc[2])
-            # self.ui.label_4.setText(myDataTime.loc[3])
-            # self.ui.label_8.setText(myDataTime.loc[4])
-            # self.ui.label_7.setText(myDataTime.loc[5])
-            # self.ui.label_6.setText(myDataTime.loc[6])
-            # self.ui.label_9.setText(myDataTime.loc[7])
-
-            #self.set_new_icon(self.ui.label_2)
-
-            # for i in dan:
-            #     new = i['dt_txt']
-            #     labelData = str(new).split("/n")
-            #     df = pd.DataFrame(labelData)
-            #     print(df)
-
-            #print('city:', dataIS['city']['name'], dataIS['city']['country'])
-            # for i in dataIS['list']:
-            #     print( (i['dt_txt'])[:16], '{0:+3.0f}'.format(i['main']['temp']),
-            #         '{0:2.0f}'.format(i['wind']['speed']) + " м/с",
-            #         i['weather'][0]['description'], i['weather'][0]['icon'] )
-
 
         except Exception as e:
             print("Exception (forecast):", e)
