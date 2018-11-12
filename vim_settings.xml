@@ -16,10 +16,10 @@
         <mark key="[" line="108" column="0" />
         <mark key="]" line="108" column="31" />
       </file>
-      <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1542014723425">
-        <mark key="[" line="119" column="44" />
-        <mark key="]" line="119" column="44" />
-        <mark key="." line="119" column="44" />
+      <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1542017036542">
+        <mark key="[" line="121" column="16" />
+        <mark key="]" line="121" column="16" />
+        <mark key="." line="121" column="16" />
       </file>
     </filemarks>
     <jumps>
@@ -34,7 +34,7 @@
         <text encoding="base64">IAogICAgICAgICAg</text>
       </register>
       <register name="&quot;" type="4">
-        <text>: {['icon']</text>
+        <text>icn_days = pd.DataFrame(danis)</text>
       </register>
       <register name="2" type="4">
         <text>listTime = datetime.fromtimestamp(myDataTime.loc[i]).strftime(
@@ -84,7 +84,7 @@
                 print(meme)</text>
       </register>
       <register name="-" type="4">
-        <text>: {['icon']</text>
+        <text>icn_days = pd.DataFrame(danis)</text>
       </register>
     </registers>
     <search>
