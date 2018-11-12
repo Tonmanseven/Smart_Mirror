@@ -16,10 +16,10 @@
         <mark key="[" line="108" column="0" />
         <mark key="]" line="108" column="31" />
       </file>
-      <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1542022399279">
-        <mark key="[" line="127" column="32" />
-        <mark key="]" line="127" column="32" />
-        <mark key="." line="127" column="32" />
+      <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1542023860579">
+        <mark key="[" line="128" column="11" />
+        <mark key="]" line="128" column="11" />
+        <mark key="." line="128" column="11" />
       </file>
     </filemarks>
     <jumps>
@@ -34,7 +34,7 @@
         <text encoding="base64">CiAgICAgICAgICAgICMgcw==</text>
       </register>
       <register name="&quot;" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICMgcw==</text>
+        <text encoding="base64">ICNwcmludChhcnJheV9mb3JfaWNbMDo3XSk=</text>
       </register>
       <register name="2" type="4">
         <text encoding="base64">IAogICAgICAgICAg</text>
@@ -83,7 +83,7 @@
                 i = i + 1</text>
       </register>
       <register name="-" type="4">
-        <text>s</text>
+        <text encoding="base64">ICNwcmludChhcnJheV9mb3JfaWNbMDo3XSk=</text>
       </register>
     </registers>
     <search>
