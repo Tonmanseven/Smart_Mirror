@@ -100,10 +100,15 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
   
         return cityID    
 
-    #Зашрузим нужную иконку
+    #Зашрузим нужную иконку основного окна
     def set_weather_icon(self, label, weather):
         pixmap = QPixmap(os.path.join('images', "%s.png" % weather))
         label.setPixmap(pixmap)
+
+    #Зашрузим нужную иконку дополнительных окон
+    def set_dop_icon(self, label, weather_dop):
+        pixm = QPixmap(os.path.join('my_icns', "%s.png" % weather_dop))
+        label.setPixmap(pixm)
 
     def request_forecast(self, idCity):
         try:
@@ -113,30 +118,49 @@ class desWeather(QtWidgets.QMainWindow, Ui_MainWindow):
 
             dan = dataIS['list']
 
+        # Читаем погоду на весь день BEGIN
+            #извелкаем данные о иконках
+            array_for_ic = []
+            for j in dan:
+                danis = (j['weather'])
+                for b in danis:
+                    penis = (b['icon'])
+                    array_for_ic += [penis]
+            # вставляем нужные иконки в нужные лэйблы
+            self.set_dop_icon(self.ui.label_10, array_for_ic[0])
+            self.set_dop_icon(self.ui.label_11, array_for_ic[1])
+            self.set_dop_icon(self.ui.label_12, array_for_ic[2])
+            self.set_dop_icon(self.ui.label_13, array_for_ic[3])
+            self.set_dop_icon(self.ui.label_14, array_for_ic[4])
+            self.set_dop_icon(self.ui.label_15, array_for_ic[5])
+            self.set_dop_icon(self.ui.label_16, array_for_ic[6])
+            self.set_dop_icon(self.ui.label_17, array_for_ic[7])
+         # Читаем погоду на весь день END
+
+        # Дата и время на весь день BEGIN
             dandtime= pd.DataFrame(dan)
             myDataTime = dandtime['dt']
 
             i = 0
             while i < 8:
-                listTime = datetime.fromtimestamp(myDataTime.loc[i]).strftime(
-                    '%I:%M %p %b. %d.%y')
                 self.ui.label_2.setText(datetime.fromtimestamp(myDataTime.loc[0]).strftime(
-                    '%I:%M %p %b. %d.%y'))
+                    '%H:%M %d.%y'))
                 self.ui.label_3.setText(datetime.fromtimestamp(myDataTime.loc[1]).strftime(
-                    '%I:%M %p %b. %d.%y'))
+                    '%H:%M %d.%y'))
                 self.ui.label_4.setText(datetime.fromtimestamp(myDataTime.loc[2]).strftime(
-                    '%I:%M %p %b. %d.%y'))
+                    '%H:%M %d.%y'))
                 self.ui.label_5.setText(datetime.fromtimestamp(myDataTime.loc[3]).strftime(
-                    '%I:%M %p %b. %d.%y'))
+                    '%H:%M %d.%y'))
                 self.ui.label_6.setText(datetime.fromtimestamp(myDataTime.loc[4]).strftime(
-                    '%I:%M %p %b. %d.%y'))
+                    '%H:%M %d.%y'))
                 self.ui.label_7.setText(datetime.fromtimestamp(myDataTime.loc[5]).strftime(
-                    '%I:%M %p %b. %d.%y'))
+                    '%H:%M %d.%y'))
                 self.ui.label_8.setText(datetime.fromtimestamp(myDataTime.loc[6]).strftime(
-                    '%I:%M %p %b. %d.%y'))
+                    '%H:%M %d.%y'))
                 self.ui.label_9.setText(datetime.fromtimestamp(myDataTime.loc[7]).strftime(
-                    '%I:%M %p %b. %d.%y'))
+                    '%H:%M %d.%y'))
                 i += 1
+        # Дата и время на весь день END
 
         except Exception as e:
             print("Exception (forecast):", e)
