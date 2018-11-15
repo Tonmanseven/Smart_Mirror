@@ -13,10 +13,10 @@
         <mark key="[" line="108" column="0" />
         <mark key="]" line="108" column="31" />
       </file>
-      <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1542286371692">
-        <mark key="[" line="124" column="38" />
-        <mark key="]" line="128" column="11" />
-        <mark key="." line="128" column="11" />
+      <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1542287960692">
+        <mark key="[" line="188" column="8" />
+        <mark key="]" line="188" column="8" />
+        <mark key="." line="188" column="8" />
       </file>
       <file name="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py" timestamp="1541164046567">
         <mark key="[" line="17" column="0" />
@@ -31,27 +31,34 @@
         <text encoding="base64">ICAgICAgICBsYWJlbC5zZXRQaXhtYXAocGl4bWFwKQo=</text>
       </register>
       <register name="1" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICMgcw==</text>
+        <text encoding="base64">ICAgCiMg0J/RgNC+0LPQvdC+0Lcg0L3QsCA1INC00L3QtdC5CiMgZGVmIHJlcXVlc3RfZm9yZWNhc3QoY2l0eV9pZCk6CiMgICAgIHRyeToKIyAgICAgICAgIHJlcyA9IHJlcXVlc3RzLmdldCgiaHR0cDovL2FwaS5vcGVud2VhdGhlcm1hcC5vcmcvZGF0YS8yLjUvZm9yZWNhc3QiLAojICAgICAgICAgICAgICAgICAgICAgICAgICAgIHBhcmFtcz17J2lkJzogY2l0eV9pZCwgJ3VuaXRzJzogJ21ldHJpYycsICdsYW5nJzogJ3J1JywgJ0FQUElEJzogYXBwaWR9KQojICAgICAgICAgZGF0YSA9IHJlcy5qc29uKCkKIyAgICAgICAgIHByaW50KCdjaXR5OicsIGRhdGFbJ2NpdHknXVsnbmFtZSddLCBkYXRhWydjaXR5J11bJ2NvdW50cnknXSkKIyAgICAgICAgIGZvciBpIGluIGRhdGFbJ2xpc3QnXToKIyAgICAgICAgICAgICBwcmludCggKGlbJ2R0X3R4dCddKVs6MTZdLCAnezA6KzMuMGZ9Jy5mb3JtYXQoaVsnbWFpbiddWyd0ZW1wJ10pLAojICAgICAgICAgICAgICAgICAgICAnezA6Mi4wZn0nLmZvcm1hdChpWyd3aW5kJ11bJ3NwZWVkJ10pICsgIiDQvC/RgSIsCiMgICAgICAgICAgICAgICAgICAgIGdldF93aW5kX2RpcmVjdGlvbihpWyd3aW5kJ11bJ2RlZyddKSwKIyAgICAgICAgICAgICAgICAgICAgaVsnd2VhdGhlciddWzBdWydkZXNjcmlwdGlvbiddICkKIyAgICAgZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgojICAgICAgICAgcHJpbnQoIkV4Y2VwdGlvbiAoZm9yZWNhc3QpOiIsIGUpCiMgICAgICAgICBwYXNz</text>
       </register>
       <register name="&quot;" type="4">
-        <text encoding="base64">ICNwcmludChhcnJheV9mb3JfaWNbMDo3XSk=</text>
+        <text>#self.request_current_weather(url)</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">IAogICAgICAgICAg</text>
+        <text>from PyQt5.QtWidgets import (QWidget, QHBoxLayout,
+    QLabel, QApplication)</text>
       </register>
       <register name="3" type="4">
+        <text encoding="base64">CiAgICAgICAgICAgICMgcw==</text>
+      </register>
+      <register name="4" type="4">
+        <text encoding="base64">IAogICAgICAgICAg</text>
+      </register>
+      <register name="5" type="4">
         <text>listTime = datetime.fromtimestamp(myDataTime.loc[i]).strftime(
                     '%I:%M %p %b. %d.%y')</text>
       </register>
-      <register name="4" type="4">
+      <register name="6" type="4">
         <text encoding="base64">ICAgIG15RGF0YVRpbWUgPSBpWydkdCddCiAgICAgICAgICAgICMgICAgIGxpc3RUaW1lID0gZGF0ZXRpbWUuZnJvbXRpbWVzdGFtcChteURhdGFUaW1lKS5zdHJmdGltZQ==</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text># for i in dataIS['list']:
             #     dan = (i['dt_txt'])[:16]
             #     print(dan)</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text>#self.set_new_icon(self.ui.label_2)
 
             # for i in dan:
@@ -66,7 +73,7 @@
             #         '{0:2.0f}'.format(i['wind']['speed']) + &quot; м/с&quot;,
             #         i['weather'][0]['description'], i['weather'][0]['icon'] )</text>
       </register>
-      <register name="7" type="4">
+      <register name="9" type="4">
         <text>self.ui.label_3.setText(myDataTime.loc[1])
                 self.ui.label_4.setText(myDataTime.loc[2])
                 self.ui.label_5.setText(myDataTime.loc[3])
@@ -75,15 +82,8 @@
                 self.ui.label_8.setText(myDataTime.loc[6])
                 self.ui.label_9.setText(myDataTime.loc[7])</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">ICMgcHJpbnQoZGF0ZXRpbWUuZnJvbXRpbWVzdGFtcChteURhdGFUaW1lKS5zdHJmdGltZSgnJUk6JU0gJXAnKSkKCgo=</text>
-      </register>
-      <register name="9" type="4">
-        <text>for i in myDataTime:
-                i = i + 1</text>
-      </register>
       <register name="-" type="4">
-        <text encoding="base64">ICNwcmludChhcnJheV9mb3JfaWNbMDo3XSk=</text>
+        <text>#self.request_current_weather(url)</text>
       </register>
     </registers>
     <search>
