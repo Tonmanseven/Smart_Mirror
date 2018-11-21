@@ -3,10 +3,13 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1540369365902">
+      <file name="/Dummy.txt" timestamp="1542796153248">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="/Python Console" timestamp="1542012866045">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/coursera/solution_2.py" timestamp="1542795914387">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/Рабочий стол/mirror/myWeather.py" timestamp="1540375424390">
