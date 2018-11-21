@@ -9,8 +9,10 @@
       <file name="/Python Console" timestamp="1542012866045">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/coursera/solution_2.py" timestamp="1542795914387">
-        <mark key="[" line="0" column="0" />
+      <file name="$USER_HOME$/coursera/solution_2.py" timestamp="1542798202618">
+        <mark key="[" line="1" column="30" />
+        <mark key="]" line="1" column="30" />
+        <mark key="." line="1" column="30" />
       </file>
       <file name="$USER_HOME$/Рабочий стол/mirror/myWeather.py" timestamp="1540375424390">
         <mark key="[" line="108" column="0" />
@@ -38,10 +40,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text />
+        <text encoding="base64">Cm51bV9zdGVwcyA9IDQ=</text>
       </register>
       <register name="-" type="4">
-        <text />
+        <text encoding="base64">IGNoaXNsbyA9IHNwYWNlKiAobnVtX3N0ZXBzKSAtIDE=</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxudW1iZXJzXD4=</text>
@@ -50,41 +52,33 @@
         <text encoding="base64">ICAgICAgICBsYWJlbC5zZXRQaXhtYXAocGl4bWFwKQo=</text>
       </register>
       <register name="1" type="4">
-        <text encoding="base64">CiNudW1iZXJzID0gcmUuZmluZGFsbChyJ1srLV0/XGQrJywgbnVtYmVycyk=</text>
+        <text encoding="base64">Cm51bV9zdGVwcyA9IDQ=</text>
       </register>
       <register name="2" type="4">
+        <text encoding="base64">CmJ1dCA9IHNwYWNlICogbnVtX3N0ZXBz</text>
+      </register>
+      <register name="3" type="4">
+        <text encoding="base64">CiNudW1iZXJzID0gcmUuZmluZGFsbChyJ1srLV0/XGQrJywgbnVtYmVycyk=</text>
+      </register>
+      <register name="4" type="4">
         <text>data_2 = list(int(my_str)) # посимвольное чтение
 print(data_2)</text>
       </register>
-      <register name="3" type="4">
+      <register name="5" type="4">
         <text encoding="base64">CnByaW50KG5ldyk=</text>
       </register>
-      <register name="4" type="4">
+      <register name="6" type="4">
         <text encoding="base64">Cm15X3NlcmllcyA9IFtteV9zdHJd</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CmRlZiBzdW1tYShhKToKICAgIGEgPSBhLnNwbGl0KCkKICAgIGIgPSBbXQogICAgZm9yIGkgaW4gYToKICAgICAgICBiLmFwcGVuZChpbnQoaSkpCiAgICByZXR1cm4gc3VtKGIpCgpzID0gMAp3aGlsZSAxOgogICAgYSA9IGlucHV0KCkKICAgIGlmIGEgPT0gJ18nOiBicmVhawogICAgcyArPSBzdW1tYShhKQogICAgcHJpbnQoJ1N1bW1hOicscyk=</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text>if a == '_': break
     a = input()</text>
       </register>
-      <register name="7" type="4">
-        <text encoding="base64">CmV0dXJuIHRvdGFs</text>
-      </register>
-      <register name="8" type="4">
-        <text encoding="base64">IHRvdGFsLCBjdXJyZW50ID0gMCwgJycKICAgIGZvciBjaCBpbiBzOgogICAgICAgIGlmIGNoLmlzZGlnaXQoKToKICAgICAgICAgICAgY3VycmVudCArPSBjaAogICAgICAgIGVsaWYgY3VycmVudCE9Jyc6CiAgICAgICAgICAgIHRvdGFsICs9IGludChjdXJyZW50KQogICAgICAgICAgICBjdXJyZW50ID0gJycKICAgIGlmIGN1cnJlbnQhPScnOgogICAgICAgIHRvdGFsICs9IGludChjdXJyZW50KQ==</text>
-      </register>
       <register name="9" type="4">
-        <text>total, current = 0, ''
-for ch in digit_string:
-    if ch.isdigit():
-        current += ch
-    elif current!='':
-        total += int(current)
-        current = ''
-if current!='':
-    total += int(current)</text>
+        <text encoding="base64">CmV0dXJuIHRvdGFs</text>
       </register>
     </registers>
     <search>
