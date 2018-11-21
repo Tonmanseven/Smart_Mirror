@@ -13,10 +13,10 @@
         <mark key="[" line="108" column="0" />
         <mark key="]" line="108" column="31" />
       </file>
-      <file name="$USER_HOME$/coursera/solution.py" timestamp="1542789827823">
-        <mark key="[" line="4" column="3" />
-        <mark key="]" line="4" column="3" />
-        <mark key="." line="4" column="3" />
+      <file name="$USER_HOME$/coursera/solution.py" timestamp="1542790872981">
+        <mark key="[" line="5" column="3" />
+        <mark key="]" line="5" column="3" />
+        <mark key="." line="5" column="3" />
       </file>
       <file name="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" timestamp="1542290621059">
         <mark key="[" line="189" column="8" />
@@ -36,6 +36,15 @@
         <text encoding="base64">ICAgICAgICBsYWJlbC5zZXRQaXhtYXAocGl4bWFwKQo=</text>
       </register>
       <register name="1" type="4">
+        <text encoding="base64">CmV0dXJuIHRvdGFs</text>
+      </register>
+      <register name="&quot;" type="4">
+        <text encoding="base64">CmV0dXJuIHRvdGFs</text>
+      </register>
+      <register name="2" type="4">
+        <text encoding="base64">IHRvdGFsLCBjdXJyZW50ID0gMCwgJycKICAgIGZvciBjaCBpbiBzOgogICAgICAgIGlmIGNoLmlzZGlnaXQoKToKICAgICAgICAgICAgY3VycmVudCArPSBjaAogICAgICAgIGVsaWYgY3VycmVudCE9Jyc6CiAgICAgICAgICAgIHRvdGFsICs9IGludChjdXJyZW50KQogICAgICAgICAgICBjdXJyZW50ID0gJycKICAgIGlmIGN1cnJlbnQhPScnOgogICAgICAgIHRvdGFsICs9IGludChjdXJyZW50KQ==</text>
+      </register>
+      <register name="3" type="4">
         <text>total, current = 0, ''
 for ch in digit_string:
     if ch.isdigit():
@@ -46,40 +55,30 @@ for ch in digit_string:
 if current!='':
     total += int(current)</text>
       </register>
-      <register name="&quot;" type="4">
-        <text encoding="base64">IHN0cihpbnB1dCgpKQ==</text>
-      </register>
-      <register name="2" type="4">
+      <register name="4" type="4">
         <text encoding="base64">aWYgZGlnaXRfc3RyaW5nLmlzZGlnaXQoKToKICAgIA==</text>
       </register>
-      <register name="3" type="4">
+      <register name="5" type="4">
         <text>or i in long_str:
     sum += digit_string[i+1]
     i += i
     print(sum</text>
       </register>
-      <register name="4" type="4">
+      <register name="6" type="4">
         <text encoding="base64">ICAgCiMg0J/RgNC+0LPQvdC+0Lcg0L3QsCA1INC00L3QtdC5CiMgZGVmIHJlcXVlc3RfZm9yZWNhc3QoY2l0eV9pZCk6CiMgICAgIHRyeToKIyAgICAgICAgIHJlcyA9IHJlcXVlc3RzLmdldCgiaHR0cDovL2FwaS5vcGVud2VhdGhlcm1hcC5vcmcvZGF0YS8yLjUvZm9yZWNhc3QiLAojICAgICAgICAgICAgICAgICAgICAgICAgICAgIHBhcmFtcz17J2lkJzogY2l0eV9pZCwgJ3VuaXRzJzogJ21ldHJpYycsICdsYW5nJzogJ3J1JywgJ0FQUElEJzogYXBwaWR9KQojICAgICAgICAgZGF0YSA9IHJlcy5qc29uKCkKIyAgICAgICAgIHByaW50KCdjaXR5OicsIGRhdGFbJ2NpdHknXVsnbmFtZSddLCBkYXRhWydjaXR5J11bJ2NvdW50cnknXSkKIyAgICAgICAgIGZvciBpIGluIGRhdGFbJ2xpc3QnXToKIyAgICAgICAgICAgICBwcmludCggKGlbJ2R0X3R4dCddKVs6MTZdLCAnezA6KzMuMGZ9Jy5mb3JtYXQoaVsnbWFpbiddWyd0ZW1wJ10pLAojICAgICAgICAgICAgICAgICAgICAnezA6Mi4wZn0nLmZvcm1hdChpWyd3aW5kJ11bJ3NwZWVkJ10pICsgIiDQvC/RgSIsCiMgICAgICAgICAgICAgICAgICAgIGdldF93aW5kX2RpcmVjdGlvbihpWyd3aW5kJ11bJ2RlZyddKSwKIyAgICAgICAgICAgICAgICAgICAgaVsnd2VhdGhlciddWzBdWydkZXNjcmlwdGlvbiddICkKIyAgICAgZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgojICAgICAgICAgcHJpbnQoIkV4Y2VwdGlvbiAoZm9yZWNhc3QpOiIsIGUpCiMgICAgICAgICBwYXNz</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text>from PyQt5.QtWidgets import (QWidget, QHBoxLayout,
     QLabel, QApplication)</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text encoding="base64">CiAgICAgICAgICAgICMgcw==</text>
       </register>
-      <register name="7" type="4">
+      <register name="9" type="4">
         <text encoding="base64">IAogICAgICAgICAg</text>
       </register>
-      <register name="8" type="4">
-        <text>listTime = datetime.fromtimestamp(myDataTime.loc[i]).strftime(
-                    '%I:%M %p %b. %d.%y')</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">ICAgIG15RGF0YVRpbWUgPSBpWydkdCddCiAgICAgICAgICAgICMgICAgIGxpc3RUaW1lID0gZGF0ZXRpbWUuZnJvbXRpbWVzdGFtcChteURhdGFUaW1lKS5zdHJmdGltZQ==</text>
-      </register>
       <register name="-" type="4">
-        <text encoding="base64">IHN0cihpbnB1dCgpKQ==</text>
+        <text />
       </register>
     </registers>
     <search>
