@@ -14,6 +14,12 @@
         <mark key="]" line="1" column="30" />
         <mark key="." line="1" column="30" />
       </file>
+      <file name="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py" timestamp="1541164046567">
+        <mark key="[" line="17" column="0" />
+      </file>
+      <file name="$USER_HOME$/coursera/solution_3.py" timestamp="1542895886960">
+        <mark key="[" line="0" column="0" />
+      </file>
       <file name="$USER_HOME$/Рабочий стол/mirror/myWeather.py" timestamp="1540375424390">
         <mark key="[" line="108" column="0" />
         <mark key="]" line="108" column="31" />
@@ -28,9 +34,6 @@
         <mark key="[" line="189" column="8" />
         <mark key="]" line="189" column="8" />
         <mark key="." line="189" column="8" />
-      </file>
-      <file name="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py" timestamp="1541164046567">
-        <mark key="[" line="17" column="0" />
       </file>
     </filemarks>
     <jumps>
