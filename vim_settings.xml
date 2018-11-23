@@ -17,10 +17,10 @@
       <file name="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py" timestamp="1541164046567">
         <mark key="[" line="17" column="0" />
       </file>
-      <file name="$USER_HOME$/coursera/solution_3.py" timestamp="1542977487587">
-        <mark key="[" line="4" column="0" />
-        <mark key="]" line="4" column="0" />
-        <mark key="." line="4" column="0" />
+      <file name="$USER_HOME$/coursera/solution_3.py" timestamp="1542979667699">
+        <mark key="[" line="21" column="0" />
+        <mark key="]" line="21" column="0" />
+        <mark key="." line="21" column="0" />
       </file>
       <file name="/Bash" timestamp="1542966425987">
         <mark key="[" line="0" column="0" />
@@ -48,7 +48,7 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">CgoKIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMK</text>
+        <text encoding="base64">CmlmIHN5cy5hcmd2WzE6XTo=</text>
       </register>
       <register name="-" type="4">
         <text>type=str)</text>
@@ -60,13 +60,16 @@
         <text encoding="base64">ICAgICAgICBsYWJlbC5zZXRQaXhtYXAocGl4bWFwKQo=</text>
       </register>
       <register name="1" type="4">
-        <text encoding="base64">CgoKIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMK</text>
+        <text encoding="base64">CmlmIHN5cy5hcmd2WzE6XTo=</text>
       </register>
       <register name="2" type="4">
+        <text encoding="base64">CgoKIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMK</text>
+      </register>
+      <register name="3" type="4">
         <text>else:
         print(&quot;Hello World!&quot;)</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text>parser = argparse.ArgumentParser(description='Fuzzy search in text.')
 group = parser.add_mutually_exclusive_group(required=True)
 group.add_argument('-c', '--console', action='store_true')
@@ -83,24 +86,21 @@ if args.console:
 elif rest:
     parser.error(&quot;unexpected arguments: &quot; + str(rest))</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text encoding="base64">Cm51bV9zdGVwcyA9IDQ=</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text encoding="base64">CmJ1dCA9IHNwYWNlICogbnVtX3N0ZXBz</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CiNudW1iZXJzID0gcmUuZmluZGFsbChyJ1srLV0/XGQrJywgbnVtYmVycyk=</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text>data_2 = list(int(my_str)) # посимвольное чтение
 print(data_2)</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">CnByaW50KG5ldyk=</text>
-      </register>
       <register name="9" type="4">
-        <text encoding="base64">Cm15X3NlcmllcyA9IFtteV9zdHJd</text>
+        <text encoding="base64">CnByaW50KG5ldyk=</text>
       </register>
     </registers>
     <search>
