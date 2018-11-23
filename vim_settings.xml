@@ -17,10 +17,10 @@
       <file name="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py" timestamp="1541164046567">
         <mark key="[" line="17" column="0" />
       </file>
-      <file name="$USER_HOME$/coursera/solution_3.py" timestamp="1542980487985">
-        <mark key="[" line="20" column="4" />
-        <mark key="]" line="20" column="4" />
-        <mark key="." line="20" column="4" />
+      <file name="$USER_HOME$/coursera/solution_3.py" timestamp="1542981350128">
+        <mark key="[" line="21" column="3" />
+        <mark key="]" line="21" column="3" />
+        <mark key="." line="21" column="3" />
       </file>
       <file name="/Bash" timestamp="1542966425987">
         <mark key="[" line="0" column="0" />
@@ -48,10 +48,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>pr</text>
+        <text encoding="base64">IGZvciBrZXkgaW4gbXluYW1lLmtleToKICAgICAgICBwcmludCgia2V5IG15OiB7fSIuZm9ybWF0KGtleSkp</text>
       </register>
       <register name="-" type="4">
-        <text>pr</text>
+        <text encoding="base64">IG15bmFtZSA9IHBhcnNlci5wYXJzZV9hcmdzKHN5cy5hcmd2WzBdKQ==</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxudW1iZXJzXD4=</text>
@@ -60,16 +60,19 @@
         <text encoding="base64">ICAgICAgICBsYWJlbC5zZXRQaXhtYXAocGl4bWFwKQo=</text>
       </register>
       <register name="1" type="4">
-        <text encoding="base64">CmlmIHN5cy5hcmd2WzE6XTo=</text>
+        <text encoding="base64">IGZvciBrZXkgaW4gbXluYW1lLmtleToKICAgICAgICBwcmludCgia2V5IG15OiB7fSIuZm9ybWF0KGtleSkp</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">CgoKIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMK</text>
+        <text encoding="base64">CmlmIHN5cy5hcmd2WzE6XTo=</text>
       </register>
       <register name="3" type="4">
+        <text encoding="base64">CgoKIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMK</text>
+      </register>
+      <register name="4" type="4">
         <text>else:
         print(&quot;Hello World!&quot;)</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text>parser = argparse.ArgumentParser(description='Fuzzy search in text.')
 group = parser.add_mutually_exclusive_group(required=True)
 group.add_argument('-c', '--console', action='store_true')
@@ -86,21 +89,18 @@ if args.console:
 elif rest:
     parser.error(&quot;unexpected arguments: &quot; + str(rest))</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text encoding="base64">Cm51bV9zdGVwcyA9IDQ=</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CmJ1dCA9IHNwYWNlICogbnVtX3N0ZXBz</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text encoding="base64">CiNudW1iZXJzID0gcmUuZmluZGFsbChyJ1srLV0/XGQrJywgbnVtYmVycyk=</text>
       </register>
-      <register name="8" type="4">
+      <register name="9" type="4">
         <text>data_2 = list(int(my_str)) # посимвольное чтение
 print(data_2)</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">CnByaW50KG5ldyk=</text>
       </register>
     </registers>
     <search>
@@ -130,6 +130,9 @@ print(data_2)</text>
       </shortcut-conflict>
       <shortcut-conflict owner="vim">
         <text>ctrl pressed B</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed S</text>
       </shortcut-conflict>
     </shortcut-conflicts>
   </component>
