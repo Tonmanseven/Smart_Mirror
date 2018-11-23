@@ -17,7 +17,14 @@
       <file name="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py" timestamp="1541164046567">
         <mark key="[" line="17" column="0" />
       </file>
-      <file name="$USER_HOME$/coursera/solution_3.py" timestamp="1542965130058" />
+      <file name="$USER_HOME$/coursera/solution_3.py" timestamp="1542966297016">
+        <mark key="[" line="18" column="4" />
+        <mark key="]" line="18" column="4" />
+        <mark key="." line="18" column="4" />
+      </file>
+      <file name="/Bash" timestamp="1542966425987">
+        <mark key="[" line="0" column="0" />
+      </file>
       <file name="$USER_HOME$/Рабочий стол/mirror/myWeather.py" timestamp="1540375424390">
         <mark key="[" line="108" column="0" />
         <mark key="]" line="108" column="31" />
@@ -41,21 +48,8 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>parser = argparse.ArgumentParser(description='Fuzzy search in text.')
-group = parser.add_mutually_exclusive_group(required=True)
-group.add_argument('-c', '--console', action='store_true')
-group.add_argument('-g', '--graphics', action='store_true')
-
-args, rest = parser.parse_known_args()
-if args.console:
-    console_parser = argparse.ArgumentParser(parents=[parser], add_help=False)
-    console_parser.add_argument('-r', action='store_true')
-    console_parser.add_argument('TEXTFILE', type=argparse.FileType('r'))
-    console_parser.add_argument('WORDSFILE', type=argparse.FileType('r'),
-                                default=sys.stdin, nargs='?')
-    args = console_parser.parse_args()
-elif rest:
-    parser.error(&quot;unexpected arguments: &quot; + str(rest))</text>
+        <text>else:
+        print(&quot;Hello World!&quot;)</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">IGNoaXNsbyA9IHNwYWNlKiAobnVtX3N0ZXBzKSAtIDE=</text>
@@ -67,6 +61,10 @@ elif rest:
         <text encoding="base64">ICAgICAgICBsYWJlbC5zZXRQaXhtYXAocGl4bWFwKQo=</text>
       </register>
       <register name="1" type="4">
+        <text>else:
+        print(&quot;Hello World!&quot;)</text>
+      </register>
+      <register name="2" type="4">
         <text>parser = argparse.ArgumentParser(description='Fuzzy search in text.')
 group = parser.add_mutually_exclusive_group(required=True)
 group.add_argument('-c', '--console', action='store_true')
@@ -83,31 +81,27 @@ if args.console:
 elif rest:
     parser.error(&quot;unexpected arguments: &quot; + str(rest))</text>
       </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text encoding="base64">Cm51bV9zdGVwcyA9IDQ=</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text encoding="base64">CmJ1dCA9IHNwYWNlICogbnVtX3N0ZXBz</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text encoding="base64">CiNudW1iZXJzID0gcmUuZmluZGFsbChyJ1srLV0/XGQrJywgbnVtYmVycyk=</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text>data_2 = list(int(my_str)) # посимвольное чтение
 print(data_2)</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CnByaW50KG5ldyk=</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text encoding="base64">Cm15X3NlcmllcyA9IFtteV9zdHJd</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">CmRlZiBzdW1tYShhKToKICAgIGEgPSBhLnNwbGl0KCkKICAgIGIgPSBbXQogICAgZm9yIGkgaW4gYToKICAgICAgICBiLmFwcGVuZChpbnQoaSkpCiAgICByZXR1cm4gc3VtKGIpCgpzID0gMAp3aGlsZSAxOgogICAgYSA9IGlucHV0KCkKICAgIGlmIGEgPT0gJ18nOiBicmVhawogICAgcyArPSBzdW1tYShhKQogICAgcHJpbnQoJ1N1bW1hOicscyk=</text>
-      </register>
       <register name="9" type="4">
-        <text>if a == '_': break
-    a = input()</text>
+        <text encoding="base64">CmRlZiBzdW1tYShhKToKICAgIGEgPSBhLnNwbGl0KCkKICAgIGIgPSBbXQogICAgZm9yIGkgaW4gYToKICAgICAgICBiLmFwcGVuZChpbnQoaSkpCiAgICByZXR1cm4gc3VtKGIpCgpzID0gMAp3aGlsZSAxOgogICAgYSA9IGlucHV0KCkKICAgIGlmIGEgPT0gJ18nOiBicmVhawogICAgcyArPSBzdW1tYShhKQogICAgcHJpbnQoJ1N1bW1hOicscyk=</text>
       </register>
     </registers>
     <search>
