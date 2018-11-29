@@ -17,10 +17,10 @@
       <file name="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py" timestamp="1541164046567">
         <mark key="[" line="17" column="0" />
       </file>
-      <file name="$USER_HOME$/coursera/solution_3.py" timestamp="1542981350128">
-        <mark key="[" line="21" column="3" />
-        <mark key="]" line="21" column="3" />
-        <mark key="." line="21" column="3" />
+      <file name="$USER_HOME$/coursera/solution_3.py" timestamp="1543494123515">
+        <mark key="[" line="1" column="9" />
+        <mark key="]" line="1" column="9" />
+        <mark key="." line="1" column="9" />
       </file>
       <file name="/Bash" timestamp="1542966425987">
         <mark key="[" line="0" column="0" />
@@ -48,10 +48,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">IGZvciBrZXkgaW4gbXluYW1lLmtleToKICAgICAgICBwcmludCgia2V5IG15OiB7fSIuZm9ybWF0KGtleSkp</text>
+        <text>s</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">IG15bmFtZSA9IHBhcnNlci5wYXJzZV9hcmdzKHN5cy5hcmd2WzBdKQ==</text>
+        <text>s</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxudW1iZXJzXD4=</text>
