@@ -3,7 +3,7 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1542964669396">
+      <file name="/Dummy.txt" timestamp="1543581031050">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="/Python Console" timestamp="1542012866045">
@@ -29,10 +29,10 @@
         <mark key="[" line="108" column="0" />
         <mark key="]" line="108" column="31" />
       </file>
-      <file name="$USER_HOME$/Рабочий стол/Mercury_remote-master/get_data_python3.py" timestamp="1543499732075">
-        <mark key="[" line="2" column="0" />
-        <mark key="]" line="0" column="0" />
-        <mark key="." line="0" column="0" />
+      <file name="$USER_HOME$/Рабочий стол/Mercury_remote-master/get_data_python3.py" timestamp="1543581211934">
+        <mark key="[" line="3" column="0" />
+        <mark key="]" line="2" column="0" />
+        <mark key="." line="2" column="0" />
       </file>
       <file name="$USER_HOME$/coursera/solution.py" timestamp="1542795197594">
         <mark key="'" line="6" column="0" />
@@ -52,8 +52,8 @@
       <jump line="9" column="0" filename="$USER_HOME$/coursera/solution.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">IyEvdXNyL2Jpbi9weXRob24zCiMtKi0gY29kaW5nOiB1dGYtOCAtKi0KIyBNZXJjdXJ5X3JlbW90ZSwgYWxsb3dzIHlvdSB0byByZW1vdGVseSByZWNlaXZlIGRhdGEgZnJvbSBhbiBlbGVjdHJpY2l0eSBtZXRlcgojIENvcHlyaWdodCAoQykgMjAxOCBOb3Zva3Jlc2hjaGVub3YgT2xlZyB4bWFuY2hhbkBnbWFpbC5jb20KIwojIFRoaXMgcHJvZ3JhbSBpcyBmcmVlIHNvZnR3YXJlOiB5b3UgY2FuIHJlZGlzdHJpYnV0ZSBpdCBhbmQvb3IgbW9kaWZ5CiMgaXQgdW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZSBhcyBwdWJsaXNoZWQgYnkKIyB0aGUgRnJlZSBTb2Z0d2FyZSBGb3VuZGF0aW9uLCBlaXRoZXIgdmVyc2lvbiAzIG9mIHRoZSBMaWNlbnNlLCBvcgojIChhdCB5b3VyIG9wdGlvbikgYW55IGxhdGVyIHZlcnNpb24uCg==</text>
+      <register name="&quot;" type="4">
+        <text encoding="base64">CiA=</text>
       </register>
       <register name="-" type="4">
         <text>s</text>
@@ -64,26 +64,29 @@
       <register name="0" type="2">
         <text encoding="base64">ICAgICAgICBsYWJlbC5zZXRQaXhtYXAocGl4bWFwKQo=</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">IyEvdXNyL2Jpbi9weXRob24zCiMtKi0gY29kaW5nOiB1dGYtOCAtKi0KIyBNZXJjdXJ5X3JlbW90ZSwgYWxsb3dzIHlvdSB0byByZW1vdGVseSByZWNlaXZlIGRhdGEgZnJvbSBhbiBlbGVjdHJpY2l0eSBtZXRlcgojIENvcHlyaWdodCAoQykgMjAxOCBOb3Zva3Jlc2hjaGVub3YgT2xlZyB4bWFuY2hhbkBnbWFpbC5jb20KIwojIFRoaXMgcHJvZ3JhbSBpcyBmcmVlIHNvZnR3YXJlOiB5b3UgY2FuIHJlZGlzdHJpYnV0ZSBpdCBhbmQvb3IgbW9kaWZ5CiMgaXQgdW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZSBhcyBwdWJsaXNoZWQgYnkKIyB0aGUgRnJlZSBTb2Z0d2FyZSBGb3VuZGF0aW9uLCBlaXRoZXIgdmVyc2lvbiAzIG9mIHRoZSBMaWNlbnNlLCBvcgojIChhdCB5b3VyIG9wdGlvbikgYW55IGxhdGVyIHZlcnNpb24uCg==</text>
+      <register name="1" type="4">
+        <text encoding="base64">CiA=</text>
       </register>
       <register name="2" type="2">
+        <text encoding="base64">IyEvdXNyL2Jpbi9weXRob24zCiMtKi0gY29kaW5nOiB1dGYtOCAtKi0KIyBNZXJjdXJ5X3JlbW90ZSwgYWxsb3dzIHlvdSB0byByZW1vdGVseSByZWNlaXZlIGRhdGEgZnJvbSBhbiBlbGVjdHJpY2l0eSBtZXRlcgojIENvcHlyaWdodCAoQykgMjAxOCBOb3Zva3Jlc2hjaGVub3YgT2xlZyB4bWFuY2hhbkBnbWFpbC5jb20KIwojIFRoaXMgcHJvZ3JhbSBpcyBmcmVlIHNvZnR3YXJlOiB5b3UgY2FuIHJlZGlzdHJpYnV0ZSBpdCBhbmQvb3IgbW9kaWZ5CiMgaXQgdW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZSBhcyBwdWJsaXNoZWQgYnkKIyB0aGUgRnJlZSBTb2Z0d2FyZSBGb3VuZGF0aW9uLCBlaXRoZXIgdmVyc2lvbiAzIG9mIHRoZSBMaWNlbnNlLCBvcgojIChhdCB5b3VyIG9wdGlvbikgYW55IGxhdGVyIHZlcnNpb24uCg==</text>
+      </register>
+      <register name="3" type="2">
         <text encoding="base64">Iy0qLSBjb2Rpbmc6IHV0Zi04IC0qLQo=</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text encoding="base64">IGZvciBrZXkgaW4gbXluYW1lLmtleToKICAgICAgICBwcmludCgia2V5IG15OiB7fSIuZm9ybWF0KGtleSkp</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text encoding="base64">CmlmIHN5cy5hcmd2WzE6XTo=</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text encoding="base64">CgoKIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMK</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text>else:
         print(&quot;Hello World!&quot;)</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text>parser = argparse.ArgumentParser(description='Fuzzy search in text.')
 group = parser.add_mutually_exclusive_group(required=True)
 group.add_argument('-c', '--console', action='store_true')
@@ -100,11 +103,8 @@ if args.console:
 elif rest:
     parser.error(&quot;unexpected arguments: &quot; + str(rest))</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">Cm51bV9zdGVwcyA9IDQ=</text>
-      </register>
       <register name="9" type="4">
-        <text encoding="base64">CmJ1dCA9IHNwYWNlICogbnVtX3N0ZXBz</text>
+        <text encoding="base64">Cm51bV9zdGVwcyA9IDQ=</text>
       </register>
     </registers>
     <search>
