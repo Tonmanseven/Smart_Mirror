@@ -15,13 +15,36 @@
         <mark key="]" line="1" column="30" />
         <mark key="." line="1" column="30" />
       </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/shablon_support.html" timestamp="1544443265452">
+        <mark key="[" line="135" column="0" />
+        <mark key="]" line="135" column="0" />
+        <mark key="." line="135" column="0" />
+      </file>
       <file name="$USER_HOME$/coursera/solution_3.py" timestamp="1543494123515">
         <mark key="[" line="1" column="9" />
         <mark key="]" line="1" column="9" />
         <mark key="." line="1" column="9" />
       </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/views.py" timestamp="1544443465402">
+        <mark key="[" line="9" column="46" />
+        <mark key="]" line="9" column="46" />
+        <mark key="." line="9" column="46" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/support.html" timestamp="1544442269076">
+        <mark key="[" line="137" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/station_2.html" timestamp="1544443641612">
+        <mark key="[" line="27" column="5" />
+        <mark key="]" line="27" column="5" />
+        <mark key="." line="27" column="5" />
+      </file>
       <file name="/Bash" timestamp="1542966425987">
         <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/index.html" timestamp="1544443874764">
+        <mark key="[" line="30" column="0" />
+        <mark key="]" line="30" column="0" />
+        <mark key="." line="30" column="0" />
       </file>
       <file name="$USER_HOME$/Рабочий стол/mirror/myWeather.py" timestamp="1540375424390">
         <mark key="[" line="108" column="0" />
@@ -32,11 +55,22 @@
         <mark key="]" line="2" column="0" />
         <mark key="." line="2" column="0" />
       </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/station_1.html" timestamp="1544443304254" />
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/station_3.html" timestamp="1544443678327">
+        <mark key="[" line="30" column="36" />
+        <mark key="]" line="30" column="36" />
+        <mark key="." line="30" column="36" />
+      </file>
       <file name="$USER_HOME$/Рабочий стол/Mercury_remote-master/merkury230" timestamp="1543583114022">
         <mark key="'" line="11" column="0" />
         <mark key="[" line="11" column="0" />
         <mark key="]" line="11" column="0" />
         <mark key="." line="11" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/urls.py" timestamp="1544443781730">
+        <mark key="[" line="6" column="37" />
+        <mark key="]" line="6" column="37" />
+        <mark key="." line="6" column="37" />
       </file>
       <file name="$USER_HOME$/coursera/solution.py" timestamp="1542795197594">
         <mark key="'" line="6" column="0" />
@@ -61,13 +95,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>parser = argparse.ArgumentParser()
-parser.add_argument('serial', type=str,  nargs='?', default=0, help='Serial port. For exmple /dev/ttyUSB0')
-parser.add_argument('dev_sn', type=str,  nargs='?', default=0, help='Device serial number')
-args = parser.parse_args()</text>
+        <text>3</text>
       </register>
       <register name="-" type="4">
-        <text>s</text>
+        <text>3</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxwYXJzZXJcPg==</text>
