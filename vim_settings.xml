@@ -9,13 +9,11 @@
       <file name="/Python Console" timestamp="1542012866045">
         <mark key="[" line="0" column="0" />
       </file>
+      <file name="$USER_HOME$/PycharmProjects/app/blogengine/blog/templates/blog/index.html" timestamp="1544441840531" />
       <file name="$USER_HOME$/coursera/solution_2.py" timestamp="1542798202618">
         <mark key="[" line="1" column="30" />
         <mark key="]" line="1" column="30" />
         <mark key="." line="1" column="30" />
-      </file>
-      <file name="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py" timestamp="1541164046567">
-        <mark key="[" line="17" column="0" />
       </file>
       <file name="$USER_HOME$/coursera/solution_3.py" timestamp="1543494123515">
         <mark key="[" line="1" column="9" />
@@ -50,6 +48,9 @@
         <mark key="[" line="189" column="8" />
         <mark key="]" line="189" column="8" />
         <mark key="." line="189" column="8" />
+      </file>
+      <file name="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py" timestamp="1541164046567">
+        <mark key="[" line="17" column="0" />
       </file>
     </filemarks>
     <jumps>
