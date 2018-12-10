@@ -25,10 +25,10 @@
         <mark key="]" line="1" column="9" />
         <mark key="." line="1" column="9" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/views.py" timestamp="1544443465402">
-        <mark key="[" line="30" column="46" />
-        <mark key="]" line="30" column="46" />
-        <mark key="." line="30" column="46" />
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/views.py" timestamp="1544454544881">
+        <mark key="[" line="29" column="46" />
+        <mark key="]" line="29" column="46" />
+        <mark key="." line="29" column="46" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/graph.html" timestamp="1544451351462">
         <mark key="[" line="0" column="0" />
@@ -36,7 +36,7 @@
       <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/support.html" timestamp="1544442269076">
         <mark key="[" line="137" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/station_2.html" timestamp="1544443641612">
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/station_2.html" timestamp="1544454677589">
         <mark key="[" line="27" column="5" />
         <mark key="]" line="27" column="5" />
         <mark key="." line="27" column="5" />
@@ -54,8 +54,10 @@
         <mark key="]" line="2" column="0" />
         <mark key="." line="2" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/station_1.html" timestamp="1544451560429" />
-      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/station_3.html" timestamp="1544445783608">
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/station_1.html" timestamp="1544454653597">
+        <mark key="'" line="119" column="45" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/station_3.html" timestamp="1544454706525">
         <mark key="[" line="30" column="36" />
         <mark key="]" line="30" column="36" />
         <mark key="." line="30" column="36" />
@@ -96,6 +98,7 @@
       <jump line="122" column="33" filename="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" />
       <jump line="9" column="0" filename="$USER_HOME$/coursera/solution.py" />
       <jump line="11" column="0" filename="$USER_HOME$/Рабочий стол/Mercury_remote-master/merkury230" />
+      <jump line="115" column="45" filename="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/station_1.html" />
     </jumps>
     <registers>
       <register name="&quot;" type="4">
