@@ -46,10 +46,6 @@
         <mark key="]" line="30" column="0" />
         <mark key="." line="30" column="0" />
       </file>
-      <file name="$USER_HOME$/Рабочий стол/mirror/myWeather.py" timestamp="1540375424390">
-        <mark key="[" line="108" column="0" />
-        <mark key="]" line="108" column="31" />
-      </file>
       <file name="$USER_HOME$/Рабочий стол/Mercury_remote-master/get_data_python3.py" timestamp="1543582166410">
         <mark key="[" line="9" column="0" />
         <mark key="]" line="2" column="0" />
@@ -86,6 +82,11 @@
       <file name="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py" timestamp="1541164046567">
         <mark key="[" line="17" column="0" />
       </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/pingtest.py" timestamp="1544447131374">
+        <mark key="[" line="0" column="27" />
+        <mark key="]" line="0" column="27" />
+        <mark key="." line="0" column="27" />
+      </file>
     </filemarks>
     <jumps>
       <jump line="116" column="40" filename="$USER_HOME$/Рабочий стол/AgainWR/myWeather.py" />
@@ -95,10 +96,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>3</text>
+        <text encoding="base64">IA==</text>
       </register>
       <register name="-" type="4">
-        <text>3</text>
+        <text encoding="base64">IA==</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxwYXJzZXJcPg==</text>
