@@ -32,6 +32,11 @@
       <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/graph.html" timestamp="1544451351462">
         <mark key="[" line="0" column="0" />
       </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/static/js/scripts_min.js" timestamp="1544707673458">
+        <mark key="[" line="18" column="40" />
+        <mark key="]" line="18" column="40" />
+        <mark key="." line="18" column="40" />
+      </file>
       <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/support.html" timestamp="1544442269076">
         <mark key="[" line="137" column="0" />
       </file>
@@ -96,10 +101,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>]</text>
+        <text>0</text>
       </register>
       <register name="-" type="4">
-        <text>]</text>
+        <text>0</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxwYXJzZXJcPg==</text>
