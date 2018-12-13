@@ -38,10 +38,10 @@
       <file name="/Bash" timestamp="1542966425987">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/index.html" timestamp="1544443874764">
-        <mark key="[" line="30" column="0" />
-        <mark key="]" line="30" column="0" />
-        <mark key="." line="30" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/index.html" timestamp="1544703326514">
+        <mark key="[" line="65" column="0" />
+        <mark key="]" line="65" column="0" />
+        <mark key="." line="65" column="0" />
       </file>
       <file name="$USER_HOME$/Рабочий стол/Mercury_remote-master/get_data_python3.py" timestamp="1543582166410">
         <mark key="[" line="9" column="0" />
@@ -91,10 +91,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">IA==</text>
+        <text />
       </register>
       <register name="-" type="4">
-        <text encoding="base64">IA==</text>
+        <text />
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxwYXJzZXJcPg==</text>
