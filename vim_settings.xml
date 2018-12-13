@@ -6,6 +6,11 @@
       <file name="/Dummy.txt" timestamp="1543581031050">
         <mark key="[" line="0" column="0" />
       </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blogengine/urls.py" timestamp="1544703759397">
+        <mark key="[" line="24" column="39" />
+        <mark key="]" line="26" column="0" />
+        <mark key="." line="26" column="0" />
+      </file>
       <file name="/Python Console" timestamp="1542012866045">
         <mark key="[" line="0" column="0" />
       </file>
@@ -91,10 +96,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text />
+        <text>]</text>
       </register>
       <register name="-" type="4">
-        <text />
+        <text>]</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxwYXJzZXJcPg==</text>
@@ -102,50 +107,36 @@
       <register name="0" type="2">
         <text encoding="base64">ICAgICAgICBsYWJlbC5zZXRQaXhtYXAocGl4bWFwKQo=</text>
       </register>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="2" type="4">
         <text>parser = argparse.ArgumentParser()
 parser.add_argument('serial', type=str,  nargs='?', default=0, help='Serial port. For exmple /dev/ttyUSB0')
 parser.add_argument('dev_sn', type=str,  nargs='?', default=0, help='Device serial number')
 args = parser.parse_args()</text>
       </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text encoding="base64">CiA=</text>
       </register>
-      <register name="3" type="2">
+      <register name="4" type="2">
         <text encoding="base64">IyEvdXNyL2Jpbi9weXRob24zCiMtKi0gY29kaW5nOiB1dGYtOCAtKi0KIyBNZXJjdXJ5X3JlbW90ZSwgYWxsb3dzIHlvdSB0byByZW1vdGVseSByZWNlaXZlIGRhdGEgZnJvbSBhbiBlbGVjdHJpY2l0eSBtZXRlcgojIENvcHlyaWdodCAoQykgMjAxOCBOb3Zva3Jlc2hjaGVub3YgT2xlZyB4bWFuY2hhbkBnbWFpbC5jb20KIwojIFRoaXMgcHJvZ3JhbSBpcyBmcmVlIHNvZnR3YXJlOiB5b3UgY2FuIHJlZGlzdHJpYnV0ZSBpdCBhbmQvb3IgbW9kaWZ5CiMgaXQgdW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZSBhcyBwdWJsaXNoZWQgYnkKIyB0aGUgRnJlZSBTb2Z0d2FyZSBGb3VuZGF0aW9uLCBlaXRoZXIgdmVyc2lvbiAzIG9mIHRoZSBMaWNlbnNlLCBvcgojIChhdCB5b3VyIG9wdGlvbikgYW55IGxhdGVyIHZlcnNpb24uCg==</text>
       </register>
-      <register name="4" type="2">
+      <register name="5" type="2">
         <text encoding="base64">Iy0qLSBjb2Rpbmc6IHV0Zi04IC0qLQo=</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text encoding="base64">IGZvciBrZXkgaW4gbXluYW1lLmtleToKICAgICAgICBwcmludCgia2V5IG15OiB7fSIuZm9ybWF0KGtleSkp</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CmlmIHN5cy5hcmd2WzE6XTo=</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text encoding="base64">CgoKIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMK</text>
       </register>
-      <register name="8" type="4">
+      <register name="9" type="4">
         <text>else:
         print(&quot;Hello World!&quot;)</text>
-      </register>
-      <register name="9" type="4">
-        <text>parser = argparse.ArgumentParser(description='Fuzzy search in text.')
-group = parser.add_mutually_exclusive_group(required=True)
-group.add_argument('-c', '--console', action='store_true')
-group.add_argument('-g', '--graphics', action='store_true')
-
-args, rest = parser.parse_known_args()
-if args.console:
-    console_parser = argparse.ArgumentParser(parents=[parser], add_help=False)
-    console_parser.add_argument('-r', action='store_true')
-    console_parser.add_argument('TEXTFILE', type=argparse.FileType('r'))
-    console_parser.add_argument('WORDSFILE', type=argparse.FileType('r'),
-                                default=sys.stdin, nargs='?')
-    args = console_parser.parse_args()
-elif rest:
-    parser.error(&quot;unexpected arguments: &quot; + str(rest))</text>
       </register>
     </registers>
     <search>
