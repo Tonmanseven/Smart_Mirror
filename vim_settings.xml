@@ -45,10 +45,10 @@
         <mark key="]" line="18" column="40" />
         <mark key="." line="18" column="40" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/static/libs/chartist.min.css" timestamp="1544789202075">
-        <mark key="[" line="0" column="4" />
-        <mark key="]" line="0" column="4" />
-        <mark key="." line="0" column="4" />
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/static/libs/chartist.min.css" timestamp="1544790227490">
+        <mark key="[" line="29" column="3" />
+        <mark key="]" line="29" column="3" />
+        <mark key="." line="29" column="3" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/support.html" timestamp="1544442269076">
         <mark key="[" line="137" column="0" />
@@ -74,7 +74,7 @@
       <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/station_1.html" timestamp="1544454653597">
         <mark key="'" line="7" column="45" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/station_3.html" timestamp="1544789092472">
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/station_3.html" timestamp="1544790632726">
         <mark key="[" line="140" column="0" />
         <mark key="]" line="140" column="0" />
         <mark key="." line="140" column="0" />
@@ -119,10 +119,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>d</text>
+        <text />
       </register>
       <register name="-" type="4">
-        <text>d</text>
+        <text />
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxwYXJzZXJcPg==</text>
