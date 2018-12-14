@@ -11,6 +11,11 @@
         <mark key="]" line="26" column="0" />
         <mark key="." line="26" column="0" />
       </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blogengine/settings.py" timestamp="1544777522430">
+        <mark key="[" line="107" column="0" />
+        <mark key="]" line="107" column="0" />
+        <mark key="." line="107" column="0" />
+      </file>
       <file name="/Python Console" timestamp="1542012866045">
         <mark key="[" line="0" column="0" />
       </file>
@@ -28,6 +33,9 @@
         <mark key="[" line="1" column="9" />
         <mark key="]" line="1" column="9" />
         <mark key="." line="1" column="9" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/views.py" timestamp="1544777271422">
+        <mark key="[" line="5" column="29" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/graph.html" timestamp="1544451351462">
         <mark key="[" line="0" column="0" />
@@ -106,10 +114,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>{</text>
+        <text />
       </register>
       <register name="-" type="4">
-        <text>{</text>
+        <text />
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxwYXJzZXJcPg==</text>
