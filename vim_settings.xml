@@ -16,10 +16,10 @@
         <mark key="]" line="1" column="9" />
         <mark key="." line="1" column="9" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/views.py" timestamp="1545472064281">
-        <mark key="[" line="26" column="17" />
-        <mark key="]" line="26" column="17" />
-        <mark key="." line="26" column="17" />
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/views.py" timestamp="1545475109026">
+        <mark key="[" line="32" column="4" />
+        <mark key="]" line="32" column="4" />
+        <mark key="." line="32" column="4" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/static/js/scripts_min.js" timestamp="1545318091941">
         <mark key="[" line="23" column="22" />
@@ -123,10 +123,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>(</text>
+        <text />
       </register>
       <register name="-" type="4">
-        <text>(</text>
+        <text />
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxwYXJzZXJcPg==</text>
