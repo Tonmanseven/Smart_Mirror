@@ -21,6 +21,9 @@
         <mark key="]" line="32" column="4" />
         <mark key="." line="32" column="4" />
       </file>
+      <file name="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py" timestamp="1541164046567">
+        <mark key="[" line="17" column="0" />
+      </file>
       <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/static/js/scripts_min.js" timestamp="1545318091941">
         <mark key="[" line="23" column="22" />
         <mark key="]" line="23" column="22" />
@@ -70,7 +73,7 @@
         <mark key="]" line="189" column="8" />
         <mark key="." line="189" column="8" />
       </file>
-      <file name="/Dummy.txt" timestamp="1545321786336">
+      <file name="/Dummy.txt" timestamp="1553690260359">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blogengine/urls.py" timestamp="1544703759397">
@@ -96,7 +99,6 @@
         <mark key="]" line="27" column="5" />
         <mark key="." line="27" column="5" />
       </file>
-      <file name="$USER_HOME$/.local/lib/python3.6/site-packages/django/shortcuts.py" timestamp="1545324737936" />
       <file name="$USER_HOME$/Рабочий стол/Mercury_remote-master/get_data_python3.py" timestamp="1543582166410">
         <mark key="[" line="9" column="0" />
         <mark key="]" line="2" column="0" />
@@ -104,9 +106,6 @@
       </file>
       <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/station_3.html" timestamp="1545324012993">
         <mark key="[" line="24" column="0" />
-      </file>
-      <file name="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py" timestamp="1541164046567">
-        <mark key="[" line="17" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/untitled/venv/app/blogengine/blog/templates/blog/pingtest.py" timestamp="1544447131374">
         <mark key="[" line="0" column="27" />
